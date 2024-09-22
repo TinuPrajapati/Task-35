@@ -19,6 +19,7 @@ app.use(
     origin: process.env.frontend_url,
     methods: ["GET", "POST"],
     credentials: true,
+    allowedHeaders: "Content-Type,Authorization",
   })
 );
 
